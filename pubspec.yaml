@@ -1,5 +1,5 @@
 name: device_names
-description: Lookup device marketing names with ease.
+description: Lookup device marketing names for Android and iOS with ease. No internet connection or database required.
 version: 0.1.0
 homepage: https://github.com/Boehrsi/device_names
 
