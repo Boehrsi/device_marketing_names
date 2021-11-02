@@ -33,7 +33,7 @@ final deviceNameFromModel = deviceNames.getMarketingNameFromModel(DeviceType.and
 
 ## Sources
 
-The data is delivered by https://github.com/Boehrsi/device_identifiers which fetches the following sources. Updates are integrated regularly. 
+The data is delivered by [device_identifiers](https://github.com/Boehrsi/device_identifiers) which fetches the following sources. Updates are integrated regularly. 
 
 - **iOS**: https://github.com/SeparateRecords/apple_device_identifiers
 - **Android**: https://storage.googleapis.com/play_public/supported_devices.html (via https://support.google.com/googleplay/answer/1727131?hl=en)
