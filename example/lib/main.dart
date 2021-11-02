@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:device_names/device_names.dart';
+import 'package:device_marketing_names/device_marketing_names.dart';
 import 'package:flutter/material.dart';
 
 void main() {

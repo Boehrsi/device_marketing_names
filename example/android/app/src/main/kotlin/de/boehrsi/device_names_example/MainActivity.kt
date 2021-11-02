@@ -1,4 +1,4 @@
-package de.boehrsi.device_names_example
+package de.boehrsi.device_marketing_names_example
 
 import io.flutter.embedding.android.FlutterActivity
 

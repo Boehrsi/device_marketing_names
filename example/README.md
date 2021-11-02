@@ -1,6 +1,6 @@
-# device_names_example
+# device_marketing_names_example
 
-Demonstrates how to use the device_names plugin.
+Demonstrates how to use the device_marketing_names plugin.
 
 ## Getting Started
 

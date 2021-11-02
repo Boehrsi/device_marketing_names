@@ -17,14 +17,14 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_names: ^0.1.0
+  device_marketing_names: ^0.1.0
 ```
 
-More information on [pub.dev](https://pub.dev/packages/device_names).
+More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
 
 ### Examples
 
-For full examples please see the [example app](https://github.com/Boehrsi/device_names/blob/main/example/lib/main.dart).
+For full examples please see the [example app](https://github.com/Boehrsi/device_marketing_names/blob/main/example/lib/main.dart).
 
 ```dart
 final deviceName = await deviceNames.getMarketingName();
@@ -40,5 +40,5 @@ The data is delivered by [device_identifiers](https://github.com/Boehrsi/device_
 
 ## How to contribute
 
-If you are interested in contributing, please have a look into the [contribution guide](https://github.com/Boehrsi/device_names/blob/main/CONTRIBUTING.md). Every
+If you are interested in contributing, please have a look into the [contribution guide](https://github.com/Boehrsi/device_marketing_names/blob/main/CONTRIBUTING.md). Every
 idea, bug report or line of code is heavily appreciated.

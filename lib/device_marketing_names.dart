@@ -1,9 +1,9 @@
-library device_names;
+library device_marketing_names;
 
 import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
-import 'package:device_names/src/device_lookup.dart';
+import 'package:device_marketing_names/src/device_lookup.dart';
 
 export 'src/device_lookup.dart' show DeviceType;
 

@@ -92,7 +92,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  device_names:
+  device_marketing_names:
     dependency: "direct main"
     description:
       path: ".."

@@ -1,5 +1,5 @@
-import 'package:device_names/device_names.dart';
-import 'package:device_names/src/device_lookup.dart';
+import 'package:device_marketing_names/device_marketing_names.dart';
+import 'package:device_marketing_names/src/device_lookup.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

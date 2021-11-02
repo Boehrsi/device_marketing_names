@@ -36,4 +36,4 @@ This project has some base rules for Git handling, please try to adhere to those
 # Testing
 
 If possible everything should get tested and a commit shouldn't lower the current testing score. 
-Please see our current [test setup](https://github.com/Boehrsi/device_names/tree/main/test) and add test for code you write.
+Please see our current [test setup](https://github.com/Boehrsi/device_marketing_names/tree/main/test) and add test for code you write.

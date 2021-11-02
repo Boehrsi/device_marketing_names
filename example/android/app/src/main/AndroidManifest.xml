@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.boehrsi.device_names_example">
+    package="de.boehrsi.device_marketing_names_example">
    <application
-        android:label="device_names_example"
+        android:label="device_marketing_names_example"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
