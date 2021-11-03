@@ -28,7 +28,9 @@ class _DeviceNamesExampleState extends State<DeviceNamesExample> {
   Future<void> initPlugin() async {
     final deviceNames = DeviceNames();
     final _deviceName = await deviceNames.getMarketingName() ?? "Not found";
-    final _deviceNameFromModel = deviceNames.getMarketingNameFromModel(DeviceType.android, "ONEPLUS A5010") ?? "Not found";
+    final _deviceNameFromModel = deviceNames.getMarketingNameFromModel(
+            DeviceType.android, "ONEPLUS A5010") ??
+        "Not found";
     setState(() {
       deviceName = _deviceName;
       deviceNameFromModel = _deviceNameFromModel;

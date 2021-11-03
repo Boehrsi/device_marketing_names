@@ -15,7 +15,8 @@ class DeviceInfo implements DeviceInfoBase {
   Future<WebBrowserInfo> getWebInfo() async => await _deviceInfo.webBrowserInfo;
 
   @override
-  Future<AndroidDeviceInfo> getAndroidInfo() async => await _deviceInfo.androidInfo;
+  Future<AndroidDeviceInfo> getAndroidInfo() async =>
+      await _deviceInfo.androidInfo;
 
   @override
   Future<IosDeviceInfo> getIosInfo() async => await _deviceInfo.iosInfo;

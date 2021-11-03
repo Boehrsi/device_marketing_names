@@ -20,7 +20,8 @@ void main() {
 
   test('Lookup Browser', () async {
     when(platform.isWeb()).thenReturn(true);
-    when(device.getWebInfo()).thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
+    when(device.getWebInfo())
+        .thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
 
     final result = await lookupDevice(platform, device);
 
@@ -30,7 +31,8 @@ void main() {
   test('Lookup Android', () async {
     when(platform.isWeb()).thenReturn(false);
     when(platform.isAndroid()).thenReturn(true);
-    when(device.getAndroidInfo()).thenAnswer((_) async => getMockAndroidInfo("KB2005"));
+    when(device.getAndroidInfo())
+        .thenAnswer((_) async => getMockAndroidInfo("KB2005"));
 
     final result = await lookupDevice(platform, device);
 
@@ -41,7 +43,8 @@ void main() {
     when(platform.isWeb()).thenReturn(false);
     when(platform.isAndroid()).thenReturn(false);
     when(platform.isIOS()).thenReturn(true);
-    when(device.getIosInfo()).thenAnswer((_) async => getMockIosInfo("iPhone13,4"));
+    when(device.getIosInfo())
+        .thenAnswer((_) async => getMockIosInfo("iPhone13,4"));
 
     final result = await lookupDevice(platform, device);
 
@@ -50,7 +53,8 @@ void main() {
 
   test('Lookup by model (iPhone 12 Pro Max)', () {
     final deviceNames = DeviceNames();
-    final result = deviceNames.getMarketingNameFromModel(DeviceType.ios, "iPhone13,4");
+    final result =
+        deviceNames.getMarketingNameFromModel(DeviceType.ios, "iPhone13,4");
 
     expect(result, 'iPhone 12 Pro Max');
   });

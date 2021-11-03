@@ -8,7 +8,9 @@ import 'src/device_lookup.dart';
 export 'src/device_lookup.dart' show DeviceType;
 
 class DeviceNames {
-  Future<String?> getMarketingName() async => await lookupDevice(PlatformInfo(), DeviceInfo());
+  Future<String?> getMarketingName() async =>
+      await lookupDevice(PlatformInfo(), DeviceInfo());
 
-  String? getMarketingNameFromModel(DeviceType type, String model) => lookupName(type, model);
+  String? getMarketingNameFromModel(DeviceType type, String model) =>
+      lookupName(type, model);
 }
