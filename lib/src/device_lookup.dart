@@ -10,7 +10,7 @@ enum DeviceType {
   ios,
 }
 
-Future<String?> lookupByPlatform(PlatformInfoBase platform, DeviceInfoBase device) async {
+Future<String?> lookupDevice(PlatformInfoBase platform, DeviceInfoBase device) async {
   if (platform.isWeb()) {
     final webInfo = await device.getWebInfo();
     return describeEnum(webInfo.browserName).sentenceCase();

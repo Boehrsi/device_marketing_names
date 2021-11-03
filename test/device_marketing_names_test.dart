@@ -22,7 +22,7 @@ void main() {
     when(platform.isWeb()).thenReturn(true);
     when(device.getWebInfo()).thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
 
-    final result = await lookupByPlatform(platform, device);
+    final result = await lookupDevice(platform, device);
 
     expect(result, "Firefox");
   });
@@ -32,7 +32,7 @@ void main() {
     when(platform.isAndroid()).thenReturn(true);
     when(device.getAndroidInfo()).thenAnswer((_) async => getMockAndroidInfo("KB2005"));
 
-    final result = await lookupByPlatform(platform, device);
+    final result = await lookupDevice(platform, device);
 
     expect(result, "OnePlus 8T");
   });
@@ -43,7 +43,7 @@ void main() {
     when(platform.isIOS()).thenReturn(true);
     when(device.getIosInfo()).thenAnswer((_) async => getMockIosInfo("iPhone13,4"));
 
-    final result = await lookupByPlatform(platform, device);
+    final result = await lookupDevice(platform, device);
 
     expect(result, "iPhone 12 Pro Max");
   });
