@@ -18,62 +18,62 @@ void main() {
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('Lookup Browser', () async {
-    when(platform.isWeb()).thenReturn(true);
-    when(device.getWebInfo())
-        .thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
+  group('Core functions', () {
+    test('Lookup Browser', () async {
+      when(platform.isWeb()).thenReturn(true);
+      when(device.getWebInfo()).thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
 
-    final result = await lookupDevice(platform, device);
+      final result = await lookupDevice(platform, device);
 
-    expect(result, "Firefox");
+      expect(result, "Firefox");
+    });
+
+    test('Lookup Android', () async {
+      when(platform.isWeb()).thenReturn(false);
+      when(platform.isAndroid()).thenReturn(true);
+      when(device.getAndroidInfo()).thenAnswer((_) async => getMockAndroidInfo("KB2005"));
+
+      final result = await lookupDevice(platform, device);
+
+      expect(result, "OnePlus 8T");
+    });
+
+    test('Lookup iOS', () async {
+      when(platform.isWeb()).thenReturn(false);
+      when(platform.isAndroid()).thenReturn(false);
+      when(platform.isIOS()).thenReturn(true);
+      when(device.getIosInfo()).thenAnswer((_) async => getMockIosInfo("iPhone13,4"));
+
+      final result = await lookupDevice(platform, device);
+
+      expect(result, "iPhone 12 Pro Max");
+    });
+
+    test('Lookup by model (iPhone 12 Pro Max)', () {
+      final deviceNames = DeviceMarketingNames();
+      final result = deviceNames.getMarketingNameFromModel(DeviceType.ios, "iPhone13,4");
+
+      expect(result, 'iPhone 12 Pro Max');
+    });
+
+    test('Fail lookup, no match', () {
+      final result = lookupName(DeviceType.ios, "no_match");
+
+      expect(result, null);
+    });
+
+    test('Fail lookup, null', () {
+      final result = lookupName(DeviceType.ios, null);
+
+      expect(result, null);
+    });
   });
 
-  test('Lookup Android', () async {
-    when(platform.isWeb()).thenReturn(false);
-    when(platform.isAndroid()).thenReturn(true);
-    when(device.getAndroidInfo())
-        .thenAnswer((_) async => getMockAndroidInfo("KB2005"));
+  group('Utils', () {
+    test('Sentence case', () {
+      final result = 'a'.sentenceCase();
 
-    final result = await lookupDevice(platform, device);
-
-    expect(result, "OnePlus 8T");
-  });
-
-  test('Lookup iOS', () async {
-    when(platform.isWeb()).thenReturn(false);
-    when(platform.isAndroid()).thenReturn(false);
-    when(platform.isIOS()).thenReturn(true);
-    when(device.getIosInfo())
-        .thenAnswer((_) async => getMockIosInfo("iPhone13,4"));
-
-    final result = await lookupDevice(platform, device);
-
-    expect(result, "iPhone 12 Pro Max");
-  });
-
-  test('Lookup by model (iPhone 12 Pro Max)', () {
-    final deviceNames = DeviceNames();
-    final result =
-        deviceNames.getMarketingNameFromModel(DeviceType.ios, "iPhone13,4");
-
-    expect(result, 'iPhone 12 Pro Max');
-  });
-
-  test('Fail lookup, no match', () {
-    final result = lookupName(DeviceType.ios, "no_match");
-
-    expect(result, null);
-  });
-
-  test('Fail lookup, null', () {
-    final result = lookupName(DeviceType.ios, null);
-
-    expect(result, null);
-  });
-
-  test('Sentence case', () {
-    final result = 'a'.sentenceCase();
-
-    expect(result, 'A');
+      expect(result, 'A');
+    });
   });
 }

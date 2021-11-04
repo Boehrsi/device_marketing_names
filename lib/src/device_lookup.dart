@@ -3,8 +3,9 @@ import 'package:device_marketing_names/src/types/platform.dart';
 import 'package:device_marketing_names/src/utils/text.dart';
 import 'package:flutter/foundation.dart';
 
-import 'device_identifiers.dart';
+import 'data/device_identifiers.dart';
 
+/// Device types for device model based lookups
 enum DeviceType {
   android,
   ios,

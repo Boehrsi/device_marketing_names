@@ -1,7 +1,9 @@
 ## 0.2.0
 
-* Breaking: return null on not supported platforms, instead of throwing an exception
+* Breaking: renamed `DeviceNames` to `DeviceMarketingNames`
+* Breaking: return `null` on not supported platforms, instead of throwing an exception
 * Add support for web. The browser name delivered by device_info_plus is forwarded
+* Add code documentation  
 * Extend testing
 
 ## 0.1.0
