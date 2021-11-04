@@ -15,10 +15,10 @@ A simple device name lookup package. Map e.g. 'iPhone13,4' to 'iPhone 12 Pro Max
 - Lookup Android marketing names
 - Lookup iOS (iPhone & iPad) marketing names
 - Lookup web browser names
+- Get the marketing name of the current device or by an already known Android or iOS model
 - Relies on [device_info_plus](https://pub.dev/packages/device_info_plus) to get the current device model information on Android or iOS and
   [device_identifiers](https://github.com/Boehrsi/device_identifiers) which maps those to the marketing names. The browser name is forwarded directly from
   device_info_plus
-- Get the marketing name of the current device or by an already known Android or iOS model
 
 ## Usage
 

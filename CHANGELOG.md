@@ -1,3 +1,8 @@
+## 0.2.1
+
+* Fix web lookup
+* Update documentation
+
 ## 0.2.0
 
 * Breaking: renamed `DeviceNames` to `DeviceMarketingNames`

@@ -1,6 +1,5 @@
-import 'dart:io' if (dart.library.js) 'dart:html';
-
 import 'package:flutter/foundation.dart';
+import 'package:universal_platform/universal_platform.dart';
 
 abstract class PlatformInfoBase {
   bool isWeb();
@@ -12,10 +11,10 @@ abstract class PlatformInfoBase {
 
 class PlatformInfo implements PlatformInfoBase {
   @override
-  bool isAndroid() => Platform.isAndroid;
+  bool isAndroid() => UniversalPlatform.isAndroid;
 
   @override
-  bool isIOS() => Platform.isIOS;
+  bool isIOS() => UniversalPlatform.isIOS;
 
   @override
   bool isWeb() => kIsWeb;
