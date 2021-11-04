@@ -1,3 +1,11 @@
+[![Pub Version](https://img.shields.io/pub/v/device_marketing_names)](https://pub.dev/packages/device_marketing_names)
+[![codecov](https://codecov.io/gh/Boehrsi/device_marketing_names/branch/main/graph/badge.svg?token=HCTVMPPX2V)](https://codecov.io/gh/Boehrsi/device_marketing_names)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/boehrsi/device_marketing_names/Main)](https://github.com/Boehrsi/device_marketing_names/actions)
+[![GitHub](https://img.shields.io/github/license/boehrsi/device_marketing_names)](https://github.com/Boehrsi/device_marketing_names/blob/main/LICENSE)
+[![likes](https://badges.bar/device_marketing_names/likes)](https://pub.dev/packages/device_marketing_names/score)
+[![popularity](https://badges.bar/device_marketing_names/popularity)](https://pub.dev/packages/device_marketing_names/score)
+[![pub points](https://badges.bar/device_marketing_names/pub%20points)](https://pub.dev/packages/device_marketing_names/score)
+
 # Device Names
 
 A simple device name lookup package. Map e.g. 'iPhone13,4' to 'iPhone 12 Pro Max' or 'SM-G980F' to 'Galaxy S20'. No internet connection or database required.
