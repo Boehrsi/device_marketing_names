@@ -6,7 +6,7 @@
 [![popularity](https://badges.bar/device_marketing_names/popularity)](https://pub.dev/packages/device_marketing_names/score)
 [![pub points](https://badges.bar/device_marketing_names/pub%20points)](https://pub.dev/packages/device_marketing_names/score)
 
-# Device Names
+# Device Marketing Names
 
 A simple device name lookup package. Map e.g. 'iPhone13,4' to 'iPhone 12 Pro Max' or 'SM-G980F' to 'Galaxy S20'. No internet connection or database required.
 
