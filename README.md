@@ -40,9 +40,10 @@ For full examples please see the [example app](https://github.com/Boehrsi/device
 ```dart
 
 final deviceNames = DeviceMarketingNames();
-final deviceName = await
-deviceNames.getMarketingName();
+// Get current device name
+final deviceName = await deviceNames.getMarketingName();
 
+// Get device name for a specific device
 final deviceNameFromModel = deviceNames.getMarketingNameFromModel(DeviceType.android, "ONEPLUS A5010");
 ```
 
