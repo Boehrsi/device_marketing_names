@@ -1,3 +1,8 @@
+## 0.3.0
+
+* Update to device_identifiers version 0.2.0 (https://github.com/Boehrsi/device_identifiers/releases/tag/0.2.0)
+* Update database
+
 ## 0.2.1
 
 * Fix web lookup

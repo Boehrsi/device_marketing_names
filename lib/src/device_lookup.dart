@@ -35,8 +35,8 @@ String? lookupName(DeviceType type, String? model) {
   }
   switch (type) {
     case DeviceType.android:
-      return android[model];
+      return lookupAndroidName(model);
     case DeviceType.ios:
-      return iOS[model];
+      return lookupIosName(model);
   }
 }
