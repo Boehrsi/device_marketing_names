@@ -1,6 +1,5 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:device_marketing_names/device_marketing_names.dart';
-import 'package:device_marketing_names/src/data/device_identifiers.dart';
 import 'package:device_marketing_names/src/device_lookup.dart';
 import 'package:device_marketing_names/src/types/device.dart';
 import 'package:device_marketing_names/src/types/platform.dart';
