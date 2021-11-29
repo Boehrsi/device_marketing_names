@@ -49,11 +49,18 @@ void main() {
       expect(result, "iPhone 12 Pro Max");
     });
 
-    test('Lookup by model (iPhone 12 Pro Max)', () {
+    test('Lookup iOS by model', () {
       final deviceNames = DeviceMarketingNames();
       final result = deviceNames.getMarketingNameFromModel(DeviceType.ios, "iPhone13,4");
 
       expect(result, 'iPhone 12 Pro Max');
+    });
+
+    test('Lookup Android by model', () {
+      final deviceNames = DeviceMarketingNames();
+      final result = deviceNames.getMarketingNameFromModel(DeviceType.android, "KB2005");
+
+      expect(result, 'OnePlus 8T');
     });
 
     test('Fail lookup, no match', () {
