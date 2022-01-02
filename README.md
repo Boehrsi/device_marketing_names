@@ -28,7 +28,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_marketing_names: ^0.3.0
+  device_marketing_names: ^0.3.1
 ```
 
 More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
