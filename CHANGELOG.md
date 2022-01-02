@@ -1,3 +1,9 @@
+## 0.3.1
+
+* Update database
+* Update dependencies  
+* Update example app
+
 ## 0.3.0
 
 * Update to device_identifiers version 0.2.0 (https://github.com/Boehrsi/device_identifiers/releases/tag/0.2.0)
