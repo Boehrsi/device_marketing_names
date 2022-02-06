@@ -1,4 +1,4 @@
-// [2022-02-06 02:12:11.977167] Auto generated file, do not change.
+// [2022-02-06 10:21:21.053833] Auto generated file, do not change.
 
 late Map<String, String> _iOs = {
   'iPhone1,1': 'iPhone',
@@ -121,7 +121,7 @@ late Map<String, String> _iOs = {
   'iPad14,2': 'iPad mini (6th generation) Wi-Fi + Cellular',
 };
 String? lookupIosName(String model) => _iOs[model];
-late Map<String, String> _android_0 = {
+late Map<String, String> _android0 = {
   '001DL': 'Streak',
   '001HT': 'Desire HD',
   '003P': '003P',
@@ -133,7 +133,7 @@ late Map<String, String> _android_0 = {
   '0PJA2': 'One M9',
   '0PM92': 'Desire 626s',
 };
-late Map<String, String> _android_1 = {
+late Map<String, String> _android1 = {
   '1': 'mu 1',
   '10 Plus': '10 Plus',
   '10.1Myros': 'VP100+',
@@ -267,7 +267,7 @@ late Map<String, String> _android_1 = {
   '1HY4G': '1HY4G',
   '1IY4G': '1IY4G',
 };
-late Map<String, String> _android_2 = {
+late Map<String, String> _android2 = {
   '2': '2',
   '2000_000170_00': 'rephone',
   '2013022': 'Hong Mi',
@@ -342,7 +342,7 @@ late Map<String, String> _android_2 = {
   '2T-C12AP': '2T-C12AP',
   '2T-C16AP': '2T-C16AP',
 };
-late Map<String, String> _android_3 = {
+late Map<String, String> _android3 = {
   '3': '3',
   '3000': '3000',
   '3001': '3001',
@@ -367,7 +367,7 @@ late Map<String, String> _android_3 = {
   '3W_EEA': '3W_EEA',
   '3W_US': '3W_US',
 };
-late Map<String, String> _android_4 = {
+late Map<String, String> _android4 = {
   '4003A': 'PIXI3(4)',
   '4003J': 'PIXI3(4)',
   '4009A': 'ALCATEL ONETOUCH PIXI 3 (3.5)',
@@ -498,7 +498,7 @@ late Map<String, String> _android_4 = {
   '4S806_Z31S': 'TH-43JX580C',
   '4U': '4U',
 };
-late Map<String, String> _android_5 = {
+late Map<String, String> _android5 = {
   '5-0': '5-0',
   '5-Inches': '5-Inches',
   '5.5': '5.5',
@@ -912,7 +912,7 @@ late Map<String, String> _android_5 = {
   '5S': '5_S',
   '5Star_Note_5': '5Star_Note_5',
 };
-late Map<String, String> _android_6 = {
+late Map<String, String> _android6 = {
   '6001': 'G3',
   '6002': 'G3 Pro',
   '6003': 'G5 Elite',
@@ -1007,7 +1007,7 @@ late Map<String, String> _android_6 = {
   '6Cb': '6Cb',
   '6S': '6S',
 };
-late Map<String, String> _android_7 = {
+late Map<String, String> _android7 = {
   '7008': 'X7 Pro',
   '701HW': 'HUAWEI MediaPad M3 Lite',
   '701LV': 'Lenovo TAB4',
@@ -1091,7 +1091,7 @@ late Map<String, String> _android_7 = {
   '7WC1': 'Koral',
   '7WD1': 'Koral',
 };
-late Map<String, String> _android_8 = {
+late Map<String, String> _android8 = {
   '8': '8',
   '80-1': 'Maxwell 10 / Maxwell-10',
   '8001': 'G-Tab',
@@ -1213,7 +1213,7 @@ late Map<String, String> _android_8 = {
   '8TT-A': '8TT-A_EEA',
   '8WC1': 'Koral',
 };
-late Map<String, String> _android_9 = {
+late Map<String, String> _android9 = {
   '9 Pro': '9_Pro',
   '9 inch SDU': 'SDU',
   '9.4\'\' FFF': '9.4\'\' FFF',
@@ -1335,7 +1335,7 @@ late Map<String, String> _android_9 = {
   '9DTB7': 'Hipstreet 9DTB7 / Lazer MY9308P',
   '9S61Z_ZQ20S': '43GX580C',
 };
-late Map<String, String> _android_A = {
+late Map<String, String> _androidA = {
   'A-STREAM': 'A-STREAM',
   'A-TT00': 'A-TT00',
   'A/S10': 'A/S10',
@@ -3361,7 +3361,7 @@ late Map<String, String> _android_A = {
   'Azumi_V5': 'Azumi V5 / V5',
   'Azumi_V54': 'Azumi_V54_AC04',
 };
-late Map<String, String> _android_B = {
+late Map<String, String> _androidB = {
   'B BOT 50': 'B bot 50',
   'B BOT 550': 'B bot 550',
   'B UHD Android TV': 'Continental Edison',
@@ -4379,7 +4379,7 @@ late Map<String, String> _android_B = {
   'Bush10Nou': 'Bush10Nou',
   'Business_4_G1': 'Business_4_G1',
 };
-late Map<String, String> _android_C = {
+late Map<String, String> _androidC = {
   'C Bot Tab 100': 'C bot tab 100',
   'C Bot Tab 70': 'C bot tab 70',
   'C-4': 'C-4',
@@ -5457,7 +5457,7 @@ late Map<String, String> _android_C = {
   'Cynus_F10': 'Cynus F10',
   'Cynus_F9_4G': 'Cynus F9 4G',
 };
-late Map<String, String> _android_D = {
+late Map<String, String> _androidD = {
   'D': 'D',
   'D-805XATV HD': 'D-805XATV HD',
   'D000-000001-B01': 'LifeTouch S',
@@ -6012,7 +6012,7 @@ late Map<String, String> _android_D = {
   'Dyon 2K Android TV': 'Dyon',
   'Dyon 4K Android TV': 'Dyon',
 };
-late Map<String, String> _android_E = {
+late Map<String, String> _androidE = {
   'E': 'E',
   'E-Tab 4G': 'chagall',
   'E-Tab10': 'E-Tab10',
@@ -6778,7 +6778,7 @@ late Map<String, String> _android_E = {
   'Extreme E8': 'Extreme E8',
   'EyeOnGo': 'EyeOnGo10',
 };
-late Map<String, String> _android_F = {
+late Map<String, String> _androidF = {
   'F': 'F',
   'F and U Android TV': 'Greece',
   'F-01D': 'ARROWS Tab LTE F-01D',
@@ -7435,7 +7435,7 @@ late Map<String, String> _android_F = {
   'Fusion5_F803B': 'Fusion5_F803B',
   'Future': 'Future',
 };
-late Map<String, String> _android_G = {
+late Map<String, String> _androidG = {
   'G': 'G',
   'G Guard SMART TV': 'G Guard SMART TV',
   'G GuardTV': 'G GuardTV',
@@ -8427,7 +8427,7 @@ late Map<String, String> _android_G = {
   'Gtwo': 'Gtwo',
   'Guardian': 'Guardian',
 };
-late Map<String, String> _android_H = {
+late Map<String, String> _androidH = {
   'H-27': 'H-27',
   'H-35': 'H-35',
   'H1': 'H1',
@@ -10182,7 +10182,7 @@ late Map<String, String> _android_H = {
   'Hyundai_Eternity_G57L': 'Hyundai_Eternity_G57',
   'Hyundai_Eternity_G60': 'Hyundai_Eternity_G60',
 };
-late Map<String, String> _android_I = {
+late Map<String, String> _androidI = {
   'I star': 'I star',
   'I star two': 'I star two',
   'I-K1': 'ULALA',
@@ -11052,7 +11052,7 @@ late Map<String, String> _android_I = {
   'Ixion X150': 'DEXP Ixion X150',
   'Ixion XL155': 'XL155',
 };
-late Map<String, String> _android_J = {
+late Map<String, String> _androidJ = {
   'J10': 'J10',
   'J101': 'J101',
   'J101-EEA': 'J101-EEA',
@@ -11217,7 +11217,7 @@ late Map<String, String> _android_J = {
   'Jupiter': 'AV Receiver / Car Navigation',
   'Just5': 'Konrow',
 };
-late Map<String, String> _android_K = {
+late Map<String, String> _androidK = {
   'K-50': 'K-50',
   'K-BOOK73G': 'K-BOOK73G',
   'K-Elec 4K Android TV': 'K-ELEC',
@@ -11888,7 +11888,7 @@ late Map<String, String> _android_K = {
   'Kylin50i': 'Kylin50i',
   'Kylin_5.0S': 'Kylin_5.0S',
 };
-late Map<String, String> _android_L = {
+late Map<String, String> _androidL = {
   'L-01D': 'Optimus LTE',
   'L-01E': 'LG Optimus G',
   'L-01F': 'L-01F',
@@ -14372,7 +14372,7 @@ late Map<String, String> _android_L = {
   'Lynx': 'Lynx',
   'Lynx_10in': 'Lynx_10in',
 };
-late Map<String, String> _android_M = {
+late Map<String, String> _androidM = {
   'M BOT 551': 'M bot 551',
   'M BOT TAB 100': 'M bot tab 100',
   'M BOT TAB 101': 'M bot tab 101',
@@ -16206,7 +16206,7 @@ late Map<String, String> _android_M = {
   'Myria_Wide_2': 'Myria Wide 2',
   'Myria_Wide_4G': 'Myria Wide 4G',
 };
-late Map<String, String> _android_N = {
+late Map<String, String> _androidN = {
   'N': 'N',
   'N-01D': 'MEDIAS PP N-01D',
   'N-02E': 'MEDIAS U N-02E',
@@ -16922,7 +16922,7 @@ late Map<String, String> _android_N = {
   'Nura 2': 'Nura2',
   'Nuvola NP-1': 'Nuvola NP-1',
 };
-late Map<String, String> _android_O = {
+late Map<String, String> _androidO = {
   'O2': 'FONOS O2',
   'O2 TV Box': 'O2 TV Box',
   'O3': 'O3_EEA',
@@ -17275,7 +17275,7 @@ late Map<String, String> _android_O = {
   'Own One': 'Own One',
   'Oysters Pacific 800': 'Oysters Pacific 800',
 };
-late Map<String, String> _android_P = {
+late Map<String, String> _androidP = {
   'P-01D': 'P-01D',
   'P-01K': 'P-01K',
   'P-02D': 'P-02D',
@@ -19048,7 +19048,7 @@ late Map<String, String> _android_P = {
   'Pyxis-RCN': 'Pyxis-RCN',
   'Pyxis-SECV': 'Pyxis-SECV',
 };
-late Map<String, String> _android_Q = {
+late Map<String, String> _androidQ = {
   'Q': 'Q',
   'Q Explorist HR': 'Wear',
   'Q Founder': 'Q Founder',
@@ -19343,7 +19343,7 @@ late Map<String, String> _android_Q = {
   'Quick 5.0': 'Quick_5_0',
   'Quicktab': 'QUICKTAB',
 };
-late Map<String, String> _android_R = {
+late Map<String, String> _androidR = {
   'R1': 'R1',
   'R1 HD': 'R1 HD',
   'R1 Lite': 'R1 Lite',
@@ -20009,7 +20009,7 @@ late Map<String, String> _android_R = {
   'Rush': 'Rush',
   'Rush Plus': 'Rush Plus',
 };
-late Map<String, String> _android_S = {
+late Map<String, String> _androidS = {
   'S TAB 10\'\' II': 'VT10E2',
   'S-SAB220': 'S-SAB220',
   'S01-orange': 'STYLISTIC S01',
@@ -23843,7 +23843,7 @@ late Map<String, String> _android_S = {
   'Symphony_Z12': 'Symphony_Z12',
   'Sync': 'Sync',
 };
-late Map<String, String> _android_T = {
+late Map<String, String> _androidT = {
   'T-01C': 'REGZA Phone T-01C',
   'T-01D': 'REGZA Phone T-01D',
   'T-02D': 'REGZA Phone T-02D',
@@ -25574,7 +25574,7 @@ late Map<String, String> _android_T = {
   'Twist XL': 'Twist XL',
   'Typhoon_C6': 'Typhoon_C6',
 };
-late Map<String, String> _android_U = {
+late Map<String, String> _androidU = {
   'U': 'U',
   'U FEEL': 'U FEEL',
   'U FEEL FAB': 'U FEEL FAB',
@@ -25841,7 +25841,7 @@ late Map<String, String> _android_U = {
   'Unitel Smart 1': 'Unitel_Smart_1',
   'Uzbekistan': 'Uzbekistan',
 };
-late Map<String, String> _android_V = {
+late Map<String, String> _androidV = {
   'V': 'V',
   'V TAB 10\'\' LITE': 'VT10E2',
   'V TAB 2': 'VTAB2_3G',
@@ -26827,7 +26827,7 @@ late Map<String, String> _android_V = {
   'Vyper': 'Vyper',
   'Vyper PRO': 'VYPER PRO',
 };
-late Map<String, String> _android_W = {
+late Map<String, String> _androidW = {
   'W-K130-BYT': 'Y50',
   'W-K130-EEA': 'Y50',
   'W-K130-OPE': 'Y50',
@@ -27167,7 +27167,7 @@ late Map<String, String> _android_W = {
   'Woxter_N90': 'Woxter_N90',
   'Wren': 'Wren',
 };
-late Map<String, String> _android_X = {
+late Map<String, String> _androidX = {
   'X Bot Senior': 'XBOT_SENIOR',
   'X MAX': 'X MAX',
   'X Pro': 'X Pro / X_Pro',
@@ -27775,7 +27775,7 @@ late Map<String, String> _android_X = {
   'Xylo X': 'Xylo X A6 / Xylo_X_TM',
   'Xylo_T': 'Xylo_T',
 };
-late Map<String, String> _android_Y = {
+late Map<String, String> _androidY = {
   'Y Series': 'Y Series',
   'Y10': 'Y10 / Y10_1 / Y10_1_EEA / Y10_EEA',
   'Y10 Premium': 'Y10_Premium',
@@ -27958,7 +27958,7 @@ late Map<String, String> _android_Y = {
   'Ypy AB10i': 'Ypy AB10i',
   'Yupiroid': 'Yupiroid',
 };
-late Map<String, String> _android_Z = {
+late Map<String, String> _androidZ = {
   'Z-01K': 'Z-01K',
   'Z-2252': 'Z-2252',
   'Z-Ultra': 'ZTE Blade A5 2020',
@@ -28828,7 +28828,7 @@ late Map<String, String> _android_Z = {
   'Zun XS': 'Zun XS',
   'Zun_N': 'Zun_N',
 };
-late Map<String, String> _android_a = {
+late Map<String, String> _androida = {
   'a37dj dugl': 'Desire 10 compact',
   'a4': 'a4',
   'a5': 'Blade',
@@ -28857,7 +28857,7 @@ late Map<String, String> _android_a = {
   'atom': 'Redmi 10X',
   'aura ULTRA': 'aura ULTRA',
 };
-late Map<String, String> _android_b = {
+late Map<String, String> _androidb = {
   'b-box': 'b-box',
   'b1-720': 'B1-720',
   'b1-721': 'B1-721',
@@ -28873,7 +28873,7 @@ late Map<String, String> _android_b = {
   'brown 2': 'Brown2',
   'brown tab1': 'brown tab1',
 };
-late Map<String, String> _android_c = {
+late Map<String, String> _androidc = {
   'c71kw200': 'DIRECTV STREAM',
   'calgary': 'Devour',
   'caroline': 'Chromebook Pro',
@@ -28899,7 +28899,7 @@ late Map<String, String> _android_c = {
   'cyprus': 'moto e30',
   'cyprus64': 'TBD / moto e40',
 };
-late Map<String, String> _android_d = {
+late Map<String, String> _androidd = {
   'd-01G': 'd-01G',
   'd-01H': 'd-01H',
   'd-01J': 'd-01J',
@@ -28927,7 +28927,7 @@ late Map<String, String> _android_d = {
   'dtacPhoneX3': 'Phone X3',
   'dtac_Phone_S2': 'Phone S2 / dtac_Phone_S2',
 };
-late Map<String, String> _android_e = {
+late Map<String, String> _androide = {
   'e-PAD': 'e-PAD',
   'e-tab 20': 'e-tab 20',
   'e-tab4': 'E-tab 4',
@@ -28966,7 +28966,7 @@ late Map<String, String> _android_e = {
   'era_X': 'Xolo Era X',
   'eye3': 'eye3',
 };
-late Map<String, String> _android_f = {
+late Map<String, String> _androidf = {
   'f100_65u': 'F100',
   'f400': 'F400',
   'falcon': 'Falcon',
@@ -28978,7 +28978,7 @@ late Map<String, String> _android_f = {
   'freedom turbo': 'freedom turbo',
   'freedom turbo XL': 'freedom turbo XL',
 };
-late Map<String, String> _android_g = {
+late Map<String, String> _androidg = {
   'g-mee1': 'g-mee1',
   'g06': 'g06+',
   'galahad': 'Redmi 9',
@@ -28989,7 +28989,7 @@ late Map<String, String> _android_g = {
   'grunt': 'AMD Stoney Ridge Chromebook',
   'gucci': 'HM NOTE 1S CT',
 };
-late Map<String, String> _android_h = {
+late Map<String, String> _androidh = {
   'h31': 'H-31',
   'h33': 'H-33',
   'haierATV': 'Haier Android TV',
@@ -29003,7 +29003,7 @@ late Map<String, String> _android_h = {
   'hsw4026atl': 'XStream Smart Box',
   'hudl ht7s3': 'Hudl HT7S3',
 };
-late Map<String, String> _android_i = {
+late Map<String, String> _androidi = {
   'i-450': 'i-450',
   'i-STYLE 713': 'i-STYLE 713',
   'i-Tab Mini 3': 'i-Tab Mini 3',
@@ -29449,11 +29449,11 @@ late Map<String, String> _android_i = {
   'ivvi i3-M1': 'i3-M1',
   'ivvi i3P-02': 'ivvi i3P-02',
 };
-late Map<String, String> _android_j = {
+late Map<String, String> _androidj = {
   'jacuzzi': 'Mediatek MT8173 Chromebook',
   'jupiter': 'B.PROカーナビ / CyberNavi / Navigation',
 };
-late Map<String, String> _android_k = {
+late Map<String, String> _androidk = {
   'kPad': 'kPad / Chosunbiz',
   'keeby': 'Intel Jasper Lake Chromebook',
   'kevin': 'Chromebook Plus',
@@ -29461,7 +29461,7 @@ late Map<String, String> _android_k = {
   'kr101': 'viewing',
   'kukui': 'Mediatek MT8183 Tablet',
 };
-late Map<String, String> _android_l = {
+late Map<String, String> _androidl = {
   'l3453': 'L5450C',
   'l4300': 'L4300',
   'l5400': 'L5450 / L5450/L5400 / L5450ME',
@@ -29487,7 +29487,7 @@ late Map<String, String> _android_l = {
   'logikids4': 'Logikids 4',
   'lotus': 'MI  PLAY',
 };
-late Map<String, String> _android_m = {
+late Map<String, String> _androidm = {
   'm384wb': 'Wibox / WiboxTv',
   'mDESK': 'mDESK',
   'malta': 'moto e(7) / moto e(7) power',
@@ -29731,7 +29731,7 @@ late Map<String, String> _android_m = {
   'myXI3': 'myXI3',
   'mymaga CLASS Plus 2': 'mymaga CLASS Plus 2',
 };
-late Map<String, String> _android_n = {
+late Map<String, String> _androidn = {
   'n7': 'n7',
   'nJoy_Arcas_7': 'Arcas 7',
   'nJoy_Tityos_10': 'Tityos 10',
@@ -29757,7 +29757,7 @@ late Map<String, String> _android_n = {
   'nuvifone A50': 'Nuvifone',
   'nüvifone A50': 'Nuvifone',
 };
-late Map<String, String> _android_o = {
+late Map<String, String> _androido = {
   'octopus': 'Intel Gemini Lake Chromebook',
   'omega_lite_4': 'Omega Lite 4',
   'one touch 995C+': 'one touch 995C+',
@@ -29777,7 +29777,7 @@ late Map<String, String> _android_o = {
   'oraimo R401S': 'oraimo R401S',
   'oraimo R402': 'R402',
 };
-late Map<String, String> _android_p = {
+late Map<String, String> _androidp = {
   'pad_d85': 'Haier',
   'pearl': 'NETBOX',
   'pine': 'Redmi  7A',
@@ -29785,11 +29785,11 @@ late Map<String, String> _android_p = {
   'puff': 'Chromebox',
   'pulse': 'PULSE',
 };
-late Map<String, String> _android_q = {
+late Map<String, String> _androidq = {
   'q7': 'q7',
   'quattro': 'quattro',
 };
-late Map<String, String> _android_r = {
+late Map<String, String> _androidr = {
   'rammus': 'Intel Amber Lake Y Chromebook',
   'realme SA Smart TV': 'realme SA Smart TV',
   'realme Smart TV': 'realme Smart TV',
@@ -29809,7 +29809,7 @@ late Map<String, String> _android_r = {
   'roarV95': 'roarV95',
   'roar_V150': 'roar_V150',
 };
-late Map<String, String> _android_s = {
+late Map<String, String> _androids = {
   's2': 'Turbo-X s2',
   's4': 's4',
   's4_pro': 's4_pro',
@@ -29853,7 +29853,7 @@ late Map<String, String> _android_s = {
   'swisstone SD 530': 'swisstone SD 530',
   'switch plus': 'switch plus',
 };
-late Map<String, String> _android_t = {
+late Map<String, String> _androidt = {
   'tPad8': 'tPad8',
   'tab10': 'tab10',
   'telma i401': 'Telma i401 / telma_i401',
@@ -29876,7 +29876,7 @@ late Map<String, String> _android_t = {
   'trogdor': 'Qualcomm SC7180 Chromebook',
   'twist neo': 'Twist Neo',
 };
-late Map<String, String> _android_u = {
+late Map<String, String> _androidu = {
   'uMax85': 'uMax85',
   'uie4027lgu': 'U+tv UHD3',
   'uiw4030dnm': 'NETBOX',
@@ -29886,7 +29886,7 @@ late Map<String, String> _android_u = {
   'ute7057lgu': 'U+tv Soundbar Black',
   'uvh1301': 'Kitchen Hub',
 };
-late Map<String, String> _android_v = {
+late Map<String, String> _androidv = {
   'v7': 'v7',
   'v7-EEA': 'v7-EEA',
   'venus': 'venus',
@@ -30079,7 +30079,7 @@ late Map<String, String> _android_v = {
   'vsi8q_1': 'ViewPadi8Q',
   'vsi8q_1_coho': 'ViewPadi8Q',
 };
-late Map<String, String> _android_w = {
+late Map<String, String> _androidw = {
   'w5': 'w5',
   'w6': 'w6',
   'waipu tv stick': 'waipu tv stick',
@@ -30089,16 +30089,16 @@ late Map<String, String> _android_w = {
   'wolverine12': 'Wolverine12',
   'wolverine7': 'Wolverine7',
 };
-late Map<String, String> _android_x = {
+late Map<String, String> _androidx = {
   'x600': 'Le1',
   'xTablet-A680': 'xTablet-A680',
   'xTabletA680': 'xTabletA680',
 };
-late Map<String, String> _android_y = {
+late Map<String, String> _androidy = {
   'yes': 'Yes / yes',
   'yetruepad21': 'yetruepad21',
 };
-late Map<String, String> _android_z = {
+late Map<String, String> _androidz = {
   'zBox 1': 'zBox 1',
   'zork': 'AMD Raven Ridge Chromebook',
   'zx70': 'ZX70',
@@ -30107,129 +30107,129 @@ String? lookupAndroidName(String model) {
   final chunkKey = model.toString()[0];
   switch (chunkKey) {
     case '0':
-      return _android_0[model];
+      return _android0[model];
     case '1':
-      return _android_1[model];
+      return _android1[model];
     case '2':
-      return _android_2[model];
+      return _android2[model];
     case '3':
-      return _android_3[model];
+      return _android3[model];
     case '4':
-      return _android_4[model];
+      return _android4[model];
     case '5':
-      return _android_5[model];
+      return _android5[model];
     case '6':
-      return _android_6[model];
+      return _android6[model];
     case '7':
-      return _android_7[model];
+      return _android7[model];
     case '8':
-      return _android_8[model];
+      return _android8[model];
     case '9':
-      return _android_9[model];
+      return _android9[model];
     case 'A':
-      return _android_A[model];
+      return _androidA[model];
     case 'B':
-      return _android_B[model];
+      return _androidB[model];
     case 'C':
-      return _android_C[model];
+      return _androidC[model];
     case 'D':
-      return _android_D[model];
+      return _androidD[model];
     case 'E':
-      return _android_E[model];
+      return _androidE[model];
     case 'F':
-      return _android_F[model];
+      return _androidF[model];
     case 'G':
-      return _android_G[model];
+      return _androidG[model];
     case 'H':
-      return _android_H[model];
+      return _androidH[model];
     case 'I':
-      return _android_I[model];
+      return _androidI[model];
     case 'J':
-      return _android_J[model];
+      return _androidJ[model];
     case 'K':
-      return _android_K[model];
+      return _androidK[model];
     case 'L':
-      return _android_L[model];
+      return _androidL[model];
     case 'M':
-      return _android_M[model];
+      return _androidM[model];
     case 'N':
-      return _android_N[model];
+      return _androidN[model];
     case 'O':
-      return _android_O[model];
+      return _androidO[model];
     case 'P':
-      return _android_P[model];
+      return _androidP[model];
     case 'Q':
-      return _android_Q[model];
+      return _androidQ[model];
     case 'R':
-      return _android_R[model];
+      return _androidR[model];
     case 'S':
-      return _android_S[model];
+      return _androidS[model];
     case 'T':
-      return _android_T[model];
+      return _androidT[model];
     case 'U':
-      return _android_U[model];
+      return _androidU[model];
     case 'V':
-      return _android_V[model];
+      return _androidV[model];
     case 'W':
-      return _android_W[model];
+      return _androidW[model];
     case 'X':
-      return _android_X[model];
+      return _androidX[model];
     case 'Y':
-      return _android_Y[model];
+      return _androidY[model];
     case 'Z':
-      return _android_Z[model];
+      return _androidZ[model];
     case 'a':
-      return _android_a[model];
+      return _androida[model];
     case 'b':
-      return _android_b[model];
+      return _androidb[model];
     case 'c':
-      return _android_c[model];
+      return _androidc[model];
     case 'd':
-      return _android_d[model];
+      return _androidd[model];
     case 'e':
-      return _android_e[model];
+      return _androide[model];
     case 'f':
-      return _android_f[model];
+      return _androidf[model];
     case 'g':
-      return _android_g[model];
+      return _androidg[model];
     case 'h':
-      return _android_h[model];
+      return _androidh[model];
     case 'i':
-      return _android_i[model];
+      return _androidi[model];
     case 'j':
-      return _android_j[model];
+      return _androidj[model];
     case 'k':
-      return _android_k[model];
+      return _androidk[model];
     case 'l':
-      return _android_l[model];
+      return _androidl[model];
     case 'm':
-      return _android_m[model];
+      return _androidm[model];
     case 'n':
-      return _android_n[model];
+      return _androidn[model];
     case 'o':
-      return _android_o[model];
+      return _androido[model];
     case 'p':
-      return _android_p[model];
+      return _androidp[model];
     case 'q':
-      return _android_q[model];
+      return _androidq[model];
     case 'r':
-      return _android_r[model];
+      return _androidr[model];
     case 's':
-      return _android_s[model];
+      return _androids[model];
     case 't':
-      return _android_t[model];
+      return _androidt[model];
     case 'u':
-      return _android_u[model];
+      return _androidu[model];
     case 'v':
-      return _android_v[model];
+      return _androidv[model];
     case 'w':
-      return _android_w[model];
+      return _androidw[model];
     case 'x':
-      return _android_x[model];
+      return _androidx[model];
     case 'y':
-      return _android_y[model];
+      return _androidy[model];
     case 'z':
-      return _android_z[model];
+      return _androidz[model];
     default:
       return null;
   }
