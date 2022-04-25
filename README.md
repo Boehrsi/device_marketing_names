@@ -28,7 +28,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_marketing_names: ^0.3.3
+  device_marketing_names: ^0.4.0
 ```
 
 More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
@@ -38,14 +38,24 @@ More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
 For full examples please see the [example app](https://github.com/Boehrsi/device_marketing_names/blob/main/example/lib/main.dart).
 
 ```dart
-
 final deviceNames = DeviceMarketingNames();
-// Get current device name
-final deviceName = await deviceNames.getMarketingName();
+// Get one marketing name of the device.
+final singleDeviceName = await deviceMarketingNames.getSingleName();
+// Get all marketing names of the device.
+final deviceNames = await deviceMarketingNames.getNames();
 
-// Get device name for a specific device
-final deviceNameFromModel = deviceNames.getMarketingNameFromModel(DeviceType.android, "ONEPLUS A5010");
+// Get one marketing name for the given model.
+final singleDeviceNameFromModel = deviceNames.getSingleNameFromModel(DeviceType.android, "ONEPLUS A5010");
+// Get all marketing names for the given model.
+final deviceNamesFromModel = deviceNames.getNamesFromModel(DeviceType.android, "ONEPLUS A5010");
 ```
+
+### Migration from 0.3.0 to 0.4.0
+
+- Replace `getMarketingName()` with `getSingleName()` if you want to get exactly one matching name.
+- Replace `getMarketingName()` with `getNames()` if you want all matching names as a single string. Names are separated by " / ".
+- Replace `getMarketingNameFromModel()` with `getSingleNameFromModel()` if you want to get exactly one matching name.
+- Replace `getMarketingNameFromModel()` with `getNamesFromModel()` if you want all matching names as a single string. Names are separated by " / ".
 
 ## How to contribute
 

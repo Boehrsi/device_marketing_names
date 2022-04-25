@@ -15,9 +15,10 @@ class DeviceNamesExample extends StatefulWidget {
 }
 
 class _DeviceNamesExampleState extends State<DeviceNamesExample> {
-  String deviceName = "Unknown";
-  String deviceNameFromModel = "Unknown";
-  String lookupState = "Waiting for lookup";
+  String singleDeviceName = "Unknown";
+  String singleDeviceNameFromModel = "Unknown";
+  String deviceNames = "Unknown";
+  String deviceNamesFromModel = "Unknown";
 
   @override
   void initState() {
@@ -26,15 +27,17 @@ class _DeviceNamesExampleState extends State<DeviceNamesExample> {
   }
 
   Future<void> initPlugin() async {
-    final deviceNames = DeviceMarketingNames();
-    final _deviceName = await deviceNames.getMarketingName() ?? "Not found";
-    final _deviceNameFromModel = deviceNames.getMarketingNameFromModel(
-            DeviceType.android, "ONEPLUS A5010") ??
-        "Not found";
+    const model = "SM-J250F";
+    final deviceMarketingNames = DeviceMarketingNames();
+    final currentSingleDeviceName = await deviceMarketingNames.getSingleName();
+    final currentDeviceNames = await deviceMarketingNames.getNames();
     setState(() {
-      deviceName = _deviceName;
-      deviceNameFromModel = _deviceNameFromModel;
-      lookupState = "Done";
+      singleDeviceName = currentSingleDeviceName;
+      deviceNames = currentDeviceNames;
+      singleDeviceNameFromModel = deviceMarketingNames.getSingleNameFromModel(
+          DeviceType.android, model);
+      deviceNamesFromModel =
+          deviceMarketingNames.getNamesFromModel(DeviceType.android, model);
     });
   }
 
@@ -48,22 +51,30 @@ class _DeviceNamesExampleState extends State<DeviceNamesExample> {
         body: Padding(
           padding: const EdgeInsets.all(32.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
-                'Lookup state: $lookupState',
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                'Device: $deviceName',
-                textAlign: TextAlign.center,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'First device name:\n$singleDeviceName',
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 32.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Device lookup for specific model (ONEPLUS A5010): $deviceNameFromModel',
-                  textAlign: TextAlign.center,
+                  'All possible device names:\n$deviceNames',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'First device name for model "SM-J250F":\n$singleDeviceNameFromModel',
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'All possible device names for model "SM-J250F":\n$deviceNamesFromModel',
                 ),
               ),
             ],

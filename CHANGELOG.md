@@ -1,3 +1,14 @@
+## 0.4.0
+* Add new methods getNames(), getNamesAsList(), getSingleName() and getNamesFromModel(), getNamesFromModelAsList(), getSingleNameFromModel()
+* Device lookups now always return a non-null value. If no name was found, the provided model will be returned   
+* Deprecate getMarketingName() and getMarketingNameFromModel(). These methods will be removed in version 0.5.0
+* Reduced database size
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2022-04-25)
+* Update dependencies
+* Update documentation
+* Update example app
+* Update tests
+
 ## 0.3.3
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2022-03-13)
