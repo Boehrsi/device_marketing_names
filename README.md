@@ -39,13 +39,16 @@ For full examples please see the [example app](https://github.com/Boehrsi/device
 
 ```dart
 final deviceNames = DeviceMarketingNames();
+
 // Get one marketing name of the device.
 final singleDeviceName = await deviceMarketingNames.getSingleName();
+
 // Get all marketing names of the device.
 final deviceNames = await deviceMarketingNames.getNames();
 
 // Get one marketing name for the given model.
 final singleDeviceNameFromModel = deviceNames.getSingleNameFromModel(DeviceType.android, "ONEPLUS A5010");
+
 // Get all marketing names for the given model.
 final deviceNamesFromModel = deviceNames.getNamesFromModel(DeviceType.android, "ONEPLUS A5010");
 ```
