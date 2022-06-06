@@ -18,17 +18,17 @@ void main() {
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  const _model = "SM-J250F";
-  const _modelFirstResult = "Galaxy Grand Prime Pro";
-  const _modelResult = "Galaxy Grand Prime Pro / Galaxy J2 / Galaxy J2 Pro";
-  const _modelExampleList = "some / device / data";
-  const _modelExampleSome = "some";
-  const _modelExampleDevice = "device";
-  const _modelExampleData = "data";
-  const _modelExampleInvalid = "invalid_data";
-  const _modelExampleEmpty = "";
-  const _modelIos = "iPhone13,4";
-  const _modelIosResult = "iPhone 12 Pro Max";
+  const model = "SM-J250F";
+  const modelFirstResult = "Galaxy Grand Prime Pro";
+  const modelResult = "Galaxy Grand Prime Pro / Galaxy J2 / Galaxy J2 Pro";
+  const modelExampleList = "some / device / data";
+  const modelExampleSome = "some";
+  const modelExampleDevice = "device";
+  const modelExampleData = "data";
+  const modelExampleInvalid = "invalid_data";
+  const modelExampleEmpty = "";
+  const modelIos = "iPhone13,4";
+  const modelIosResult = "iPhone 12 Pro Max";
 
   group('Core functions', () {
     test('Lookup Browser', () async {
@@ -45,11 +45,11 @@ void main() {
       when(platform.isWeb()).thenReturn(false);
       when(platform.isAndroid()).thenReturn(true);
       when(device.getAndroidInfo())
-          .thenAnswer((_) async => getMockAndroidInfo(_model));
+          .thenAnswer((_) async => getMockAndroidInfo(model));
 
       final result = await lookupDevice(platform, device);
 
-      expect(result, _modelResult);
+      expect(result, modelResult);
     });
 
     test('Lookup iOS', () async {
@@ -57,75 +57,75 @@ void main() {
       when(platform.isAndroid()).thenReturn(false);
       when(platform.isIOS()).thenReturn(true);
       when(device.getIosInfo())
-          .thenAnswer((_) async => getMockIosInfo(_modelIos));
+          .thenAnswer((_) async => getMockIosInfo(modelIos));
 
       final result = await lookupDevice(platform, device);
 
-      expect(result, _modelIosResult);
+      expect(result, modelIosResult);
     });
 
     test('Lookup names by Android model', () {
       final deviceNames = DeviceMarketingNames();
-      final result = deviceNames.getNamesFromModel(DeviceType.android, _model);
+      final result = deviceNames.getNamesFromModel(DeviceType.android, model);
 
-      expect(result, _modelResult);
+      expect(result, modelResult);
     });
 
     test('Lookup names by Android model as list', () {
       final deviceNames = DeviceMarketingNames();
       final result =
-          deviceNames.getNamesFromModelAsList(DeviceType.android, _model);
+          deviceNames.getNamesFromModelAsList(DeviceType.android, model);
 
       expect(result.length, 3);
-      expect(result.contains(_modelFirstResult), true);
+      expect(result.contains(modelFirstResult), true);
     });
 
     test('Lookup single name by Android model', () {
       final deviceNames = DeviceMarketingNames();
       final result =
-          deviceNames.getSingleNameFromModel(DeviceType.android, _model);
+          deviceNames.getSingleNameFromModel(DeviceType.android, model);
 
-      expect(result, _modelFirstResult);
+      expect(result, modelFirstResult);
     });
 
     test('Lookup single name by Android invalid model', () {
       final deviceNames = DeviceMarketingNames();
       final result = deviceNames.getSingleNameFromModel(
-          DeviceType.android, _modelExampleInvalid);
+          DeviceType.android, modelExampleInvalid);
 
-      expect(result, _modelExampleInvalid);
+      expect(result, modelExampleInvalid);
     });
 
     test('Lookup names by iOS model', () {
       final deviceNames = DeviceMarketingNames();
-      final result = deviceNames.getNamesFromModel(DeviceType.ios, _modelIos);
+      final result = deviceNames.getNamesFromModel(DeviceType.ios, modelIos);
 
-      expect(result, _modelIosResult);
+      expect(result, modelIosResult);
     });
 
     test('Lookup names by iOS model as list', () {
       final deviceNames = DeviceMarketingNames();
       final result =
-          deviceNames.getNamesFromModelAsList(DeviceType.ios, _modelIos);
+          deviceNames.getNamesFromModelAsList(DeviceType.ios, modelIos);
 
       expect(result.length, 1);
-      expect(result.contains(_modelIosResult), true);
+      expect(result.contains(modelIosResult), true);
     });
 
     test('Lookup single name by iOS model', () {
       final deviceNames = DeviceMarketingNames();
       final result =
-          deviceNames.getSingleNameFromModel(DeviceType.ios, _modelIos);
+          deviceNames.getSingleNameFromModel(DeviceType.ios, modelIos);
 
-      expect(result, _modelIosResult);
+      expect(result, modelIosResult);
     });
 
     test('Lookup single name by iOS invalid model', () {
       final deviceNames = DeviceMarketingNames();
       final result = deviceNames.getSingleNameFromModel(
-          DeviceType.ios, _modelExampleInvalid);
+          DeviceType.ios, modelExampleInvalid);
 
-      expect(result, _modelExampleInvalid);
+      expect(result, modelExampleInvalid);
     });
 
     test('Verify data', () {
@@ -315,44 +315,44 @@ void main() {
     });
 
     test('Get list with multiple devices', () {
-      final result = _modelExampleList.getList();
+      final result = modelExampleList.getList();
 
       expect(result.length, 3);
-      expect(true, result.contains(_modelExampleSome));
-      expect(true, result.contains(_modelExampleDevice));
-      expect(true, result.contains(_modelExampleData));
+      expect(true, result.contains(modelExampleSome));
+      expect(true, result.contains(modelExampleDevice));
+      expect(true, result.contains(modelExampleData));
     });
 
     test('Get list with single device', () {
-      final result = _modelExampleDevice.getList();
+      final result = modelExampleDevice.getList();
 
       expect(result.length, 1);
-      expect(true, result.contains(_modelExampleDevice));
+      expect(true, result.contains(modelExampleDevice));
     });
 
     test('Get list with no devices', () {
-      final result = _modelExampleEmpty.getList();
+      final result = modelExampleEmpty.getList();
 
       expect(result.length, 1);
-      expect(true, result.contains(_modelExampleEmpty));
+      expect(true, result.contains(modelExampleEmpty));
     });
 
     test('Get first entry with multiple devices', () {
-      final result = _modelExampleList.getFirst();
+      final result = modelExampleList.getFirst();
 
-      expect(result, _modelExampleSome);
+      expect(result, modelExampleSome);
     });
 
     test('Get first entry with single device', () {
-      final result = _modelExampleDevice.getFirst();
+      final result = modelExampleDevice.getFirst();
 
-      expect(result, _modelExampleDevice);
+      expect(result, modelExampleDevice);
     });
 
     test('Get first entry with no devices', () {
-      final result = _modelExampleEmpty.getFirst();
+      final result = modelExampleEmpty.getFirst();
 
-      expect(result, _modelExampleEmpty);
+      expect(result, modelExampleEmpty);
     });
   });
 }

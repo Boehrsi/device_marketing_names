@@ -1,3 +1,8 @@
+## 0.4.1
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2022-06-05)
+* Update dependencies
+
 ## 0.4.0
 * Add new methods getNames(), getNamesAsList(), getSingleName() and getNamesFromModel(), getNamesFromModelAsList(), getSingleNameFromModel()
 * Device lookups now always return a non-null value. If no name was found, the provided model will be returned   
