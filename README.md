@@ -2,9 +2,9 @@
 [![codecov](https://codecov.io/gh/Boehrsi/device_marketing_names/branch/main/graph/badge.svg?token=HCTVMPPX2V)](https://codecov.io/gh/Boehrsi/device_marketing_names)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/boehrsi/device_marketing_names/Main)](https://github.com/Boehrsi/device_marketing_names/actions)
 [![GitHub](https://img.shields.io/github/license/boehrsi/device_marketing_names)](https://github.com/Boehrsi/device_marketing_names/blob/main/LICENSE)
-[![likes](https://badges.bar/device_marketing_names/likes)](https://pub.dev/packages/device_marketing_names/score)
-[![popularity](https://badges.bar/device_marketing_names/popularity)](https://pub.dev/packages/device_marketing_names/score)
-[![pub points](https://badges.bar/device_marketing_names/pub%20points)](https://pub.dev/packages/device_marketing_names/score)
+[![likes](https://img.shields.io/pub/likes/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
+[![popularity](https://img.shields.io/pub/popularity/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
+[![pub points](https://img.shields.io/pub/points/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
 
 # Device Marketing Names
 
