@@ -94,25 +94,100 @@ class MockAndroidDeviceInfo extends _i1.Mock implements _i2.AndroidDeviceInfo {
         ),
       ) as _i2.AndroidBuildVersion);
   @override
-  List<String?> get supported32BitAbis => (super.noSuchMethod(
+  String get board => (super.noSuchMethod(
+        Invocation.getter(#board),
+        returnValue: '',
+      ) as String);
+  @override
+  String get bootloader => (super.noSuchMethod(
+        Invocation.getter(#bootloader),
+        returnValue: '',
+      ) as String);
+  @override
+  String get brand => (super.noSuchMethod(
+        Invocation.getter(#brand),
+        returnValue: '',
+      ) as String);
+  @override
+  String get device => (super.noSuchMethod(
+        Invocation.getter(#device),
+        returnValue: '',
+      ) as String);
+  @override
+  String get display => (super.noSuchMethod(
+        Invocation.getter(#display),
+        returnValue: '',
+      ) as String);
+  @override
+  String get fingerprint => (super.noSuchMethod(
+        Invocation.getter(#fingerprint),
+        returnValue: '',
+      ) as String);
+  @override
+  String get hardware => (super.noSuchMethod(
+        Invocation.getter(#hardware),
+        returnValue: '',
+      ) as String);
+  @override
+  String get host => (super.noSuchMethod(
+        Invocation.getter(#host),
+        returnValue: '',
+      ) as String);
+  @override
+  String get id => (super.noSuchMethod(
+        Invocation.getter(#id),
+        returnValue: '',
+      ) as String);
+  @override
+  String get manufacturer => (super.noSuchMethod(
+        Invocation.getter(#manufacturer),
+        returnValue: '',
+      ) as String);
+  @override
+  String get model => (super.noSuchMethod(
+        Invocation.getter(#model),
+        returnValue: '',
+      ) as String);
+  @override
+  String get product => (super.noSuchMethod(
+        Invocation.getter(#product),
+        returnValue: '',
+      ) as String);
+  @override
+  List<String> get supported32BitAbis => (super.noSuchMethod(
         Invocation.getter(#supported32BitAbis),
-        returnValue: <String?>[],
-      ) as List<String?>);
+        returnValue: <String>[],
+      ) as List<String>);
   @override
-  List<String?> get supported64BitAbis => (super.noSuchMethod(
+  List<String> get supported64BitAbis => (super.noSuchMethod(
         Invocation.getter(#supported64BitAbis),
-        returnValue: <String?>[],
-      ) as List<String?>);
+        returnValue: <String>[],
+      ) as List<String>);
   @override
-  List<String?> get supportedAbis => (super.noSuchMethod(
+  List<String> get supportedAbis => (super.noSuchMethod(
         Invocation.getter(#supportedAbis),
-        returnValue: <String?>[],
-      ) as List<String?>);
+        returnValue: <String>[],
+      ) as List<String>);
   @override
-  List<String?> get systemFeatures => (super.noSuchMethod(
+  String get tags => (super.noSuchMethod(
+        Invocation.getter(#tags),
+        returnValue: '',
+      ) as String);
+  @override
+  String get type => (super.noSuchMethod(
+        Invocation.getter(#type),
+        returnValue: '',
+      ) as String);
+  @override
+  bool get isPhysicalDevice => (super.noSuchMethod(
+        Invocation.getter(#isPhysicalDevice),
+        returnValue: false,
+      ) as bool);
+  @override
+  List<String> get systemFeatures => (super.noSuchMethod(
         Invocation.getter(#systemFeatures),
-        returnValue: <String?>[],
-      ) as List<String?>);
+        returnValue: <String>[],
+      ) as List<String>);
   @override
   _i2.AndroidDisplayMetrics get displayMetrics => (super.noSuchMethod(
         Invocation.getter(#displayMetrics),

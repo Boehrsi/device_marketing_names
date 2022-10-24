@@ -19,17 +19,18 @@ Future<String?> lookupDevice(
   } else {
     if (platform.isAndroid()) {
       final androidInfo = await device.getAndroidInfo();
-      return lookupName(DeviceType.android, androidInfo.model ?? "");
+      return lookupName(DeviceType.android, androidInfo.model);
     } else if (platform.isIOS()) {
       final iosInfo = await device.getIosInfo();
-      return lookupName(DeviceType.ios, iosInfo.utsname.machine ?? "");
+      return lookupName(DeviceType.ios, iosInfo.utsname.machine);
     } else {
       return null;
     }
   }
 }
 
-String lookupName(DeviceType type, String model) {
+String lookupName(DeviceType type, String? model) {
+  model ??= "";
   switch (type) {
     case DeviceType.android:
       return lookupAndroidName(model);
