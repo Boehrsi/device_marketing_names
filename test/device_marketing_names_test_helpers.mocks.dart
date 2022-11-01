@@ -3,12 +3,9 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:device_info_plus_platform_interface/model/android_device_info.dart'
-    as _i2;
-import 'package:device_info_plus_platform_interface/model/ios_device_info.dart'
-    as _i3;
-import 'package:device_info_plus_platform_interface/model/web_browser_info.dart'
-    as _i4;
+import 'package:device_info_plus/src/model/android_device_info.dart' as _i2;
+import 'package:device_info_plus/src/model/ios_device_info.dart' as _i3;
+import 'package:device_info_plus/src/model/web_browser_info.dart' as _i4;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -67,6 +64,11 @@ class MockWebBrowserInfo extends _i1.Mock implements _i4.WebBrowserInfo {
         Invocation.getter(#browserName),
         returnValue: _i4.BrowserName.firefox,
       ) as _i4.BrowserName);
+  @override
+  Map<String, dynamic> get data => (super.noSuchMethod(
+        Invocation.getter(#data),
+        returnValue: <String, dynamic>{},
+      ) as Map<String, dynamic>);
   @override
   Map<String, dynamic> toMap() => (super.noSuchMethod(
         Invocation.method(
@@ -197,6 +199,11 @@ class MockAndroidDeviceInfo extends _i1.Mock implements _i2.AndroidDeviceInfo {
         ),
       ) as _i2.AndroidDisplayMetrics);
   @override
+  Map<String, dynamic> get data => (super.noSuchMethod(
+        Invocation.getter(#data),
+        returnValue: <String, dynamic>{},
+      ) as Map<String, dynamic>);
+  @override
   Map<String, dynamic> toMap() => (super.noSuchMethod(
         Invocation.method(
           #toMap,
@@ -227,6 +234,11 @@ class MockIosDeviceInfo extends _i1.Mock implements _i3.IosDeviceInfo {
           Invocation.getter(#utsname),
         ),
       ) as _i3.IosUtsname);
+  @override
+  Map<String, dynamic> get data => (super.noSuchMethod(
+        Invocation.getter(#data),
+        returnValue: <String, dynamic>{},
+      ) as Map<String, dynamic>);
   @override
   Map<String, dynamic> toMap() => (super.noSuchMethod(
         Invocation.method(
