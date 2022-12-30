@@ -37,18 +37,6 @@ class DeviceMarketingNames {
   /// Get one marketing name for the given model. If multiple names match the model, the first match is selected.
   String getSingleNameFromModel(DeviceType type, String model) =>
       getNamesFromModel(type, model).getFirst();
-
-  /// Loads the marketing name for the current device. Internally the device model is loaded and matched against a list of known devices.
-  /// For web browsers the browser name delivered by device_info_plus is forwarded.
-  @Deprecated('Use getSingleName() or getNames() instead.')
-  Future<String?> getMarketingName() async =>
-      await lookupDevice(PlatformInfo(), DeviceInfo());
-
-  /// Loads the marketing name for an already known device model. The device model is matched against a list of known devices.
-  /// Supported device types are Android and iOS.
-  @Deprecated('Use getSingleNameFromModel() or getNamesFromModel instead.')
-  String? getMarketingNameFromModel(DeviceType type, String model) =>
-      lookupName(type, model);
 }
 
 extension GetData on String {
