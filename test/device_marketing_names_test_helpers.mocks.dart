@@ -199,6 +199,11 @@ class MockAndroidDeviceInfo extends _i1.Mock implements _i2.AndroidDeviceInfo {
         ),
       ) as _i2.AndroidDisplayMetrics);
   @override
+  String get serialNumber => (super.noSuchMethod(
+        Invocation.getter(#serialNumber),
+        returnValue: '',
+      ) as String);
+  @override
   Map<String, dynamic> get data => (super.noSuchMethod(
         Invocation.getter(#data),
         returnValue: <String, dynamic>{},
