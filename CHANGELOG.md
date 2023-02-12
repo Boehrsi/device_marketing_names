@@ -1,3 +1,8 @@
+## 0.6.1
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2023-02-12)
+* Update dependencies
+
 ## 0.6.0
 
 * Remove deprecated methods (fix https://github.com/Boehrsi/device_marketing_names/issues/5)

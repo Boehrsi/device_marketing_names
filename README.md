@@ -28,14 +28,14 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_marketing_names: ^0.6.0
+  device_marketing_names: ^0.6.1
 ```
 
 More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
 
 ### Examples
 
-For full examples please see the [example app](https://github.com/Boehrsi/device_marketing_names/blob/main/example/lib/main.dart).
+For full examples please see the [example app](https://github.com/Boehrsi/device_marketing_names/blob/main/example/lib/main.dart). You can run the example app directly within the browser via [Zapp!](https://zapp.run/github/boehrsi/device_marketing_names/tree/main/example?entry=lib/main.dart&file=lib/main.dart).
 
 ```dart
 final deviceNames = DeviceMarketingNames();
