@@ -1,6 +1,6 @@
 name: device_marketing_names
 description: Lookup device marketing names for Android, iOS and browsers with ease. No internet connection or database required.
-version: 0.6.2
+version: 0.6.3
 homepage: https://github.com/Boehrsi/device_marketing_names
 repository: https://github.com/Boehrsi/device_marketing_names
 
@@ -20,7 +20,7 @@ dev_dependencies:
   build_runner: ^2.3.3
   device_info_plus_platform_interface: ">=3.0.0 <8.0.0"
   flutter_lints: ^2.0.1
-  mockito: ^5.3.2
+  mockito: ^5.4.0
 
 flutter:
 
