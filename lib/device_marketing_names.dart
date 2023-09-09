@@ -9,6 +9,13 @@ export 'src/device_lookup.dart' show DeviceType;
 
 /// Lookup device marketing names for the current device or a specific model
 class DeviceMarketingNames {
+  static final DeviceMarketingNames _instance =
+      DeviceMarketingNames._internal();
+
+  factory DeviceMarketingNames() => _instance;
+
+  DeviceMarketingNames._internal();
+
   String? deviceNames;
 
   /// Get all marketing names of the device. If multiple names match the model, those are concatenated and separated by " / ". Lookup results are cached.
