@@ -1,3 +1,9 @@
+## 0.7.0
+
+* Optimize library loading
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2023-09-09)
+* Update dependencies
+
 ## 0.6.7
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2023-07-30)
