@@ -1,7 +1,6 @@
 import 'package:device_marketing_names/src/types/device.dart';
 import 'package:device_marketing_names/src/types/platform.dart';
 import 'package:device_marketing_names/src/utils/text.dart';
-import 'package:flutter/foundation.dart';
 
 import 'data/device_identifiers.dart';
 
@@ -15,7 +14,7 @@ Future<String?> lookupDevice(
     PlatformInfoBase platform, DeviceInfoBase device) async {
   if (platform.isWeb()) {
     final webInfo = await device.getWebInfo();
-    return describeEnum(webInfo.browserName).sentenceCase();
+    return webInfo.browserName.name.sentenceCase();
   } else {
     if (platform.isAndroid()) {
       final androidInfo = await device.getAndroidInfo();

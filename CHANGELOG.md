@@ -1,3 +1,7 @@
+## 0.8.0
+* Update min SDK requirement to 2.15.0
+* Fix deprecation warnings
+
 ## 0.7.2
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2024-01-14)
