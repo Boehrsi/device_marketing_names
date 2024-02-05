@@ -21,4 +21,4 @@ jobs:
           channel: stable
       - run: flutter pub get
       - run: flutter test --coverage
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
