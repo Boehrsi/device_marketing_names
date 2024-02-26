@@ -22,3 +22,5 @@ jobs:
       - run: flutter pub get
       - run: flutter test --coverage
       - uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
