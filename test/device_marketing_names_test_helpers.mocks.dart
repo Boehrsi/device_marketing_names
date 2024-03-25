@@ -33,19 +33,8 @@ class _FakeAndroidBuildVersion_0 extends _i1.SmartFake
         );
 }
 
-class _FakeAndroidDisplayMetrics_1 extends _i1.SmartFake
-    implements _i2.AndroidDisplayMetrics {
-  _FakeAndroidDisplayMetrics_1(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-class _FakeIosUtsname_2 extends _i1.SmartFake implements _i3.IosUtsname {
-  _FakeIosUtsname_2(
+class _FakeIosUtsname_1 extends _i1.SmartFake implements _i3.IosUtsname {
+  _FakeIosUtsname_1(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -258,15 +247,6 @@ class MockAndroidDeviceInfo extends _i1.Mock implements _i2.AndroidDeviceInfo {
       ) as List<String>);
 
   @override
-  _i2.AndroidDisplayMetrics get displayMetrics => (super.noSuchMethod(
-        Invocation.getter(#displayMetrics),
-        returnValue: _FakeAndroidDisplayMetrics_1(
-          this,
-          Invocation.getter(#displayMetrics),
-        ),
-      ) as _i2.AndroidDisplayMetrics);
-
-  @override
   String get serialNumber => (super.noSuchMethod(
         Invocation.getter(#serialNumber),
         returnValue: _i5.dummyValue<String>(
@@ -353,7 +333,7 @@ class MockIosDeviceInfo extends _i1.Mock implements _i3.IosDeviceInfo {
   @override
   _i3.IosUtsname get utsname => (super.noSuchMethod(
         Invocation.getter(#utsname),
-        returnValue: _FakeIosUtsname_2(
+        returnValue: _FakeIosUtsname_1(
           this,
           Invocation.getter(#utsname),
         ),
