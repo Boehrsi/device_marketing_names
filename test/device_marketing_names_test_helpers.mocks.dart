@@ -256,6 +256,12 @@ class MockAndroidDeviceInfo extends _i1.Mock implements _i2.AndroidDeviceInfo {
       ) as String);
 
   @override
+  bool get isLowRamDevice => (super.noSuchMethod(
+        Invocation.getter(#isLowRamDevice),
+        returnValue: false,
+      ) as bool);
+
+  @override
   Map<String, dynamic> get data => (super.noSuchMethod(
         Invocation.getter(#data),
         returnValue: <String, dynamic>{},
