@@ -44,13 +44,13 @@ final deviceNames = DeviceMarketingNames();
 final singleDeviceName = await deviceNames.getSingleName();
 
 // Get all marketing names of the device.
-final deviceNames = await deviceNames.getNames();
+final allDeviceNames = await deviceNames.getNames();
 
 // Get one marketing name for the given model.
 final singleDeviceNameFromModel = deviceNames.getSingleNameFromModel(DeviceType.android, "ONEPLUS A5010");
 
 // Get all marketing names for the given model.
-final deviceNamesFromModel = deviceNames.getNamesFromModel(DeviceType.android, "ONEPLUS A5010");
+final allDeviceNamesFromModel = deviceNames.getNamesFromModel(DeviceType.android, "ONEPLUS A5010");
 ```
 
 ### Migration from 0.3.0 to 0.4.0
