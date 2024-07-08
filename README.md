@@ -41,10 +41,10 @@ For full examples please see the [example app](https://github.com/Boehrsi/device
 final deviceNames = DeviceMarketingNames();
 
 // Get one marketing name of the device.
-final singleDeviceName = await deviceMarketingNames.getSingleName();
+final singleDeviceName = await deviceNames.getSingleName();
 
 // Get all marketing names of the device.
-final deviceNames = await deviceMarketingNames.getNames();
+final deviceNames = await deviceNames.getNames();
 
 // Get one marketing name for the given model.
 final singleDeviceNameFromModel = deviceNames.getSingleNameFromModel(DeviceType.android, "ONEPLUS A5010");
