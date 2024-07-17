@@ -1,3 +1,7 @@
+## 0.8.5
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2024-07-14)
+
 ## 0.8.4
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2024-06-16)
