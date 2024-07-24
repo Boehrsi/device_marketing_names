@@ -1,6 +1,7 @@
 import 'package:device_marketing_names/src/types/device.dart';
 import 'package:device_marketing_names/src/types/platform.dart';
 import 'package:device_marketing_names/src/utils/text.dart';
+import 'package:flutter/services.dart';
 
 import 'data/device_identifiers.dart';
 
@@ -10,7 +11,7 @@ enum DeviceType {
   ios,
 }
 
-Future<String?> lookupDevice(
+Future<String> lookupDevice(
     PlatformInfoBase platform, DeviceInfoBase device) async {
   if (platform.isWeb()) {
     final webInfo = await device.getWebInfo();
@@ -23,7 +24,11 @@ Future<String?> lookupDevice(
       final iosInfo = await device.getIosInfo();
       return lookupName(DeviceType.ios, iosInfo.utsname.machine);
     } else {
-      return null;
+      throw PlatformException(
+        code: 'UNSUPPORTED_PLATFORM',
+        message:
+            'Device name could not be read on device with unsupported type.',
+      );
     }
   }
 }
