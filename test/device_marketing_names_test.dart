@@ -4,6 +4,7 @@ import 'package:device_marketing_names/src/device_lookup.dart';
 import 'package:device_marketing_names/src/types/device.dart';
 import 'package:device_marketing_names/src/types/platform.dart';
 import 'package:device_marketing_names/src/utils/text.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
@@ -304,6 +305,16 @@ void main() {
       expect(resultx, 'xTablet-A680');
       expect(resulty, 'yetruepad21');
       expect(resultz, 'ZX70');
+    });
+
+    test('Throw on unsupported platform', () async {
+      when(platform.isWeb()).thenReturn(false);
+      when(platform.isAndroid()).thenReturn(false);
+      when(platform.isIOS()).thenReturn(false);
+
+      final resultFuture = lookupDevice(platform, device);
+
+      expect(resultFuture, throwsA(isA<PlatformException>()));
     });
   });
 
