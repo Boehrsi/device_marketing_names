@@ -16,20 +16,17 @@ Future<String> lookupDevice(
   if (platform.isWeb()) {
     final webInfo = await device.getWebInfo();
     return webInfo.browserName.name.sentenceCase();
+  } else if (platform.isAndroid()) {
+    final androidInfo = await device.getAndroidInfo();
+    return lookupName(DeviceType.android, androidInfo.model);
+  } else if (platform.isIOS()) {
+    final iosInfo = await device.getIosInfo();
+    return lookupName(DeviceType.ios, iosInfo.utsname.machine);
   } else {
-    if (platform.isAndroid()) {
-      final androidInfo = await device.getAndroidInfo();
-      return lookupName(DeviceType.android, androidInfo.model);
-    } else if (platform.isIOS()) {
-      final iosInfo = await device.getIosInfo();
-      return lookupName(DeviceType.ios, iosInfo.utsname.machine);
-    } else {
-      throw PlatformException(
-        code: 'UNSUPPORTED_PLATFORM',
-        message:
-            'Device name could not be read on device with unsupported type.',
-      );
-    }
+    throw PlatformException(
+      code: 'UNSUPPORTED_PLATFORM',
+      message: 'Device name could not be read on device with unsupported type.',
+    );
   }
 }
 
