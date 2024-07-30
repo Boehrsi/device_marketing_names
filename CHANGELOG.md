@@ -1,6 +1,11 @@
+## 0.9.0
+
+* Throw a PlatformException on unsupported platforms (Windows & macOS)
+
 ## 0.8.5
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2024-07-14)
+* Fix broken example code in README.md
 
 ## 0.8.4
 
