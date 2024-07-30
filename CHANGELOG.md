@@ -1,6 +1,7 @@
 ## 0.9.0
 
-* Throw a PlatformException on unsupported platforms (Windows & macOS)
+* Throw a PlatformException on unsupported platforms (Windows, Linux & macOS)
+* Update supported platforms
 
 ## 0.8.5
 
