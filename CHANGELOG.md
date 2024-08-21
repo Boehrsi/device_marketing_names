@@ -1,3 +1,7 @@
+## 0.9.1
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2024-08-18)
+
 ## 0.9.0
 
 * Throw a PlatformException on unsupported platforms (Windows, Linux & macOS)
