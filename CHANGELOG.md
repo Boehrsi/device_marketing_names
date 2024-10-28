@@ -1,3 +1,8 @@
+## 0.9.3
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2024-10-28)
+* Update dependencies
+
 ## 0.9.2
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2024-09-22)
