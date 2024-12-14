@@ -31,7 +31,3 @@ platforms:
 
 scripts:
   build_runner: dart run build_runner build --delete-conflicting-outputs
-
-screenshots:
-  - description: 'Screenshot of Device Marketing Names.'
-    path: screenshots/screenshot.png
