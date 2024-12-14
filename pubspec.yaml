@@ -1,8 +1,10 @@
 name: device_marketing_names
 description: Lookup device marketing names for Android, iOS and browsers with ease. No internet connection or database required.
-version: 0.9.4
+version: 1.0.0
 homepage: https://github.com/Boehrsi/device_marketing_names
 repository: https://github.com/Boehrsi/device_marketing_names
+issue_tracker: https://github.com/Boehrsi/device_marketing_names/issues
+topics: [ device, name, utils ]
 
 environment:
   sdk: ">=2.15.0 <4.0.0"
@@ -29,3 +31,7 @@ platforms:
 
 scripts:
   build_runner: dart run build_runner build --delete-conflicting-outputs
+
+screenshots:
+  - description: Screenshot of Device Marketing Names.
+    path: screenshots/screenshot.png
