@@ -1,3 +1,11 @@
+## 1.0.0
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2024-12-15)
+* Update dependencies
+* Update Gradle
+* Regenerate example apps
+* Update documentation
+
 ## 0.9.4
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2024-11-24)
