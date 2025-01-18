@@ -5,6 +5,7 @@
 [![likes](https://img.shields.io/pub/likes/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
 [![popularity](https://img.shields.io/pub/popularity/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
 [![pub points](https://img.shields.io/pub/points/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
+[![Main](https://github.com/Boehrsi/device_marketing_names/actions/workflows/main.yml/badge.svg)](https://github.com/Boehrsi/device_marketing_names/actions/workflows/main.yml)
 
 # Device Marketing Names
 
@@ -43,7 +44,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_marketing_names: ^1.0.0
+  device_marketing_names: ^1.0.1
 ```
 
 More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
