@@ -3,7 +3,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Boehrsi/device_marketing_names/main.yml)](https://github.com/Boehrsi/device_marketing_names/actions)
 [![GitHub](https://img.shields.io/github/license/boehrsi/device_marketing_names)](https://github.com/Boehrsi/device_marketing_names/blob/main/LICENSE)
 [![likes](https://img.shields.io/pub/likes/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
-[![popularity](https://img.shields.io/pub/popularity/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
+[![pub downloads](https://img.shields.io/pub/dm/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
 [![pub points](https://img.shields.io/pub/points/device_marketing_names)](https://pub.dev/packages/device_marketing_names/score)
 [![Main](https://github.com/Boehrsi/device_marketing_names/actions/workflows/main.yml/badge.svg)](https://github.com/Boehrsi/device_marketing_names/actions/workflows/main.yml)
 
