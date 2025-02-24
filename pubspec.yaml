@@ -19,10 +19,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^2.4.11
+  build_runner: ^2.4.15
   device_info_plus_platform_interface: ">=3.0.0 <8.0.0"
   flutter_lints: ">=3.0.2 <6.0.0"
-  mockito: ^5.4.4
+  mockito: ^5.4.5
 
 platforms:
   android:
@@ -31,3 +31,6 @@ platforms:
 
 scripts:
   build_runner: dart run build_runner build --delete-conflicting-outputs
+  update_data:
+    windows:
+      - curl --output .\lib\src\data\device_identifiers.dart --url https://raw.githubusercontent.com/Boehrsi/device_identifiers/refs/heads/main/output/device_identifiers.dart
