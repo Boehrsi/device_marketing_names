@@ -1,3 +1,9 @@
+## 1.1.0
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2025-04-29)
+* New iOS data set with better readable and more recent data
+* Update dependencies
+
 ## 1.0.3
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2025-04-06)
