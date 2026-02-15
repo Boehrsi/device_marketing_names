@@ -1,9 +1,9 @@
 name: Main
 on:
   pull_request:
-    branches: [main]
+    branches: [ main ]
   push:
-    branches: [main, develop]
+    branches: [ main, develop ]
 jobs:
   analyze:
     runs-on: ubuntu-latest
