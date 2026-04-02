@@ -5,9 +5,10 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
 
-import 'package:device_info_plus/device_info_plus.dart' as _i2;
-import 'package:device_marketing_names/src/types/device.dart' as _i4;
-import 'package:device_marketing_names/src/types/platform.dart' as _i3;
+import 'package:device_marketing_names/src/logic/base/device_info.dart' as _i4;
+import 'package:device_marketing_names/src/logic/base/platform_info.dart'
+    as _i3;
+import 'package:device_marketing_names/src/models/device_info_data.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -25,9 +26,9 @@ import 'package:mockito/mockito.dart' as _i1;
 // ignore_for_file: subtype_of_sealed_class
 // ignore_for_file: invalid_use_of_internal_member
 
-class _FakeWebBrowserInfo_0 extends _i1.SmartFake
-    implements _i2.WebBrowserInfo {
-  _FakeWebBrowserInfo_0(
+class _FakeDeviceInfoData_0 extends _i1.SmartFake
+    implements _i2.DeviceInfoData {
+  _FakeDeviceInfoData_0(
     Object parent,
     Invocation parentInvocation,
   ) : super(
@@ -36,114 +37,54 @@ class _FakeWebBrowserInfo_0 extends _i1.SmartFake
         );
 }
 
-class _FakeAndroidDeviceInfo_1 extends _i1.SmartFake
-    implements _i2.AndroidDeviceInfo {
-  _FakeAndroidDeviceInfo_1(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-class _FakeIosDeviceInfo_2 extends _i1.SmartFake implements _i2.IosDeviceInfo {
-  _FakeIosDeviceInfo_2(
-    Object parent,
-    Invocation parentInvocation,
-  ) : super(
-          parent,
-          parentInvocation,
-        );
-}
-
-/// A class which mocks [PlatformInfoBase].
+/// A class which mocks [PlatformInfo].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockPlatformInfoBase extends _i1.Mock implements _i3.PlatformInfoBase {
-  MockPlatformInfoBase() {
+class MockPlatformInfo extends _i1.Mock implements _i3.PlatformInfo {
+  MockPlatformInfo() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  bool isWeb() => (super.noSuchMethod(
-        Invocation.method(
-          #isWeb,
-          [],
-        ),
+  bool get isWeb => (super.noSuchMethod(
+        Invocation.getter(#isWeb),
         returnValue: false,
       ) as bool);
 
   @override
-  bool isAndroid() => (super.noSuchMethod(
-        Invocation.method(
-          #isAndroid,
-          [],
-        ),
+  bool get isAndroid => (super.noSuchMethod(
+        Invocation.getter(#isAndroid),
         returnValue: false,
       ) as bool);
 
   @override
-  bool isIOS() => (super.noSuchMethod(
-        Invocation.method(
-          #isIOS,
-          [],
-        ),
+  bool get isIOS => (super.noSuchMethod(
+        Invocation.getter(#isIOS),
         returnValue: false,
       ) as bool);
 }
 
-/// A class which mocks [DeviceInfoBase].
+/// A class which mocks [DeviceInfo].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockDeviceInfoBase extends _i1.Mock implements _i4.DeviceInfoBase {
-  MockDeviceInfoBase() {
+class MockDeviceInfo extends _i1.Mock implements _i4.DeviceInfo {
+  MockDeviceInfo() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i5.Future<_i2.WebBrowserInfo> getWebInfo() => (super.noSuchMethod(
+  _i5.Future<_i2.DeviceInfoData> getInfo(_i3.PlatformInfo? platformInfo) =>
+      (super.noSuchMethod(
         Invocation.method(
-          #getWebInfo,
-          [],
+          #getInfo,
+          [platformInfo],
         ),
-        returnValue: _i5.Future<_i2.WebBrowserInfo>.value(_FakeWebBrowserInfo_0(
+        returnValue: _i5.Future<_i2.DeviceInfoData>.value(_FakeDeviceInfoData_0(
           this,
           Invocation.method(
-            #getWebInfo,
-            [],
+            #getInfo,
+            [platformInfo],
           ),
         )),
-      ) as _i5.Future<_i2.WebBrowserInfo>);
-
-  @override
-  _i5.Future<_i2.AndroidDeviceInfo> getAndroidInfo() => (super.noSuchMethod(
-        Invocation.method(
-          #getAndroidInfo,
-          [],
-        ),
-        returnValue:
-            _i5.Future<_i2.AndroidDeviceInfo>.value(_FakeAndroidDeviceInfo_1(
-          this,
-          Invocation.method(
-            #getAndroidInfo,
-            [],
-          ),
-        )),
-      ) as _i5.Future<_i2.AndroidDeviceInfo>);
-
-  @override
-  _i5.Future<_i2.IosDeviceInfo> getIosInfo() => (super.noSuchMethod(
-        Invocation.method(
-          #getIosInfo,
-          [],
-        ),
-        returnValue: _i5.Future<_i2.IosDeviceInfo>.value(_FakeIosDeviceInfo_2(
-          this,
-          Invocation.method(
-            #getIosInfo,
-            [],
-          ),
-        )),
-      ) as _i5.Future<_i2.IosDeviceInfo>);
+      ) as _i5.Future<_i2.DeviceInfoData>);
 }

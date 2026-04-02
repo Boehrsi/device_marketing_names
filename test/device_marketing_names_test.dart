@@ -1,8 +1,9 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:device_marketing_names/device_marketing_names.dart';
-import 'package:device_marketing_names/src/device_lookup.dart';
-import 'package:device_marketing_names/src/types/device.dart';
-import 'package:device_marketing_names/src/types/platform.dart';
+import 'package:device_marketing_names/src/logic/base/device_info.dart';
+import 'package:device_marketing_names/src/logic/lookup.dart';
+import 'package:device_marketing_names/src/models/device_info_data.dart';
+import 'package:device_marketing_names/src/logic/base/platform_info.dart';
 import 'package:device_marketing_names/src/utils/text.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -12,10 +13,10 @@ import 'package:mockito/mockito.dart';
 import 'device_marketing_names_test.mocks.dart';
 import 'device_marketing_names_test_helpers.dart';
 
-@GenerateMocks([PlatformInfoBase, DeviceInfoBase])
+@GenerateMocks([PlatformInfo, DeviceInfo])
 void main() {
-  var platform = MockPlatformInfoBase();
-  var device = MockDeviceInfoBase();
+  final platform = MockPlatformInfo();
+  final device = MockDeviceInfo();
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -33,9 +34,13 @@ void main() {
 
   group('Core functions', () {
     test('Lookup Browser', () async {
-      when(platform.isWeb()).thenReturn(true);
-      when(device.getWebInfo())
-          .thenAnswer((_) async => getMockWebInfo(BrowserName.firefox));
+      when(platform.isAndroid).thenReturn(false);
+      when(platform.isIOS).thenReturn(false);
+      when(platform.isWeb).thenReturn(true);
+      when(device.getInfo(platform)).thenAnswer((_) async {
+        final mockInfo = getMockWebInfo(BrowserName.firefox);
+        return DeviceInfoData(model: mockInfo.browserName.name);
+      });
 
       final result = await lookupDevice(platform, device);
 
@@ -43,10 +48,13 @@ void main() {
     });
 
     test('Lookup Android', () async {
-      when(platform.isWeb()).thenReturn(false);
-      when(platform.isAndroid()).thenReturn(true);
-      when(device.getAndroidInfo())
-          .thenAnswer((_) async => getMockAndroidInfo(model));
+      when(platform.isAndroid).thenReturn(true);
+      when(platform.isIOS).thenReturn(false);
+      when(platform.isWeb).thenReturn(false);
+      when(device.getInfo(platform)).thenAnswer((_) async {
+        final mockInfo = getMockAndroidInfo(model);
+        return DeviceInfoData(model: mockInfo.model);
+      });
 
       final result = await lookupDevice(platform, device);
 
@@ -54,11 +62,13 @@ void main() {
     });
 
     test('Lookup iOS', () async {
-      when(platform.isWeb()).thenReturn(false);
-      when(platform.isAndroid()).thenReturn(false);
-      when(platform.isIOS()).thenReturn(true);
-      when(device.getIosInfo())
-          .thenAnswer((_) async => getMockIosInfo(modelIos));
+      when(platform.isAndroid).thenReturn(false);
+      when(platform.isIOS).thenReturn(true);
+      when(platform.isWeb).thenReturn(false);
+      when(device.getInfo(platform)).thenAnswer((_) async {
+        final mockInfo = getMockIosInfo(modelIos);
+        return DeviceInfoData(model: mockInfo.utsname.machine);
+      });
 
       final result = await lookupDevice(platform, device);
 
@@ -307,10 +317,28 @@ void main() {
       expect(resultz, 'ZX70');
     });
 
+    test('Lookup fallback', () async {
+      when(platform.isWeb).thenReturn(false);
+      when(platform.isAndroid).thenReturn(false);
+      when(platform.isIOS).thenReturn(false);
+
+      final result = await DeviceInfo().getInfo(platform);
+
+      expect(result.model, "unknown");
+    });
+
+    test('Platform fallback', () async {
+      final platform = PlatformInfoImpl();
+
+      expect(platform.isAndroid, false);
+      expect(platform.isIOS, false);
+      expect(platform.isWeb, false);
+    });
+
     test('Throw on unsupported platform', () async {
-      when(platform.isWeb()).thenReturn(false);
-      when(platform.isAndroid()).thenReturn(false);
-      when(platform.isIOS()).thenReturn(false);
+      when(platform.isWeb).thenReturn(false);
+      when(platform.isAndroid).thenReturn(false);
+      when(platform.isIOS).thenReturn(false);
 
       final resultFuture = lookupDevice(platform, device);
 
