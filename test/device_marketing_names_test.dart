@@ -1,6 +1,7 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:device_marketing_names/device_marketing_names.dart';
 import 'package:device_marketing_names/src/logic/base/device_info.dart';
+import 'package:device_marketing_names/src/logic/base/device_info_fallback.dart';
 import 'package:device_marketing_names/src/logic/lookup.dart';
 import 'package:device_marketing_names/src/models/device_info_data.dart';
 import 'package:device_marketing_names/src/logic/base/platform_info.dart';
@@ -324,7 +325,7 @@ void main() {
 
       final result = await DeviceInfo().getInfo(platform);
 
-      expect(result.model, "unknown");
+      expect(result.model, unknown);
     });
 
     test('Platform fallback', () async {
