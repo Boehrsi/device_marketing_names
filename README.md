@@ -33,8 +33,8 @@ A simple device name lookup package. Map e.g. 'iPhone13,4' to 'iPhone 12 Pro Max
 - Lookup web browser names
 - Get the marketing name of the current device or by an already known Android or iOS model
 - Relies on [device_info_plus](https://pub.dev/packages/device_info_plus) to get the current device model information on Android or iOS and
-  [device_identifiers](https://github.com/Boehrsi/device_identifiers) which maps those to the marketing names. The browser name is forwarded directly from
-  device_info_plus
+  [device_identifiers](https://github.com/Boehrsi/device_identifiers) which maps those to the marketing names
+- The browser name is mapped via [web](https://pub.dev/packages/web) and prettified within this library
 
 ## Usage
 
@@ -44,7 +44,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  device_marketing_names: ^1.1.7
+  device_marketing_names: ^2.0.0
 ```
 
 More information on [pub.dev](https://pub.dev/packages/device_marketing_names).
