@@ -1,3 +1,10 @@
+## 2.0.0
+
+* Logic rewrite to support WASM
+* Update browser lookup logic, with more browsers supported
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2026-04-05)
+* Update dependencies
+
 ## 1.1.7
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2026-02-15)
