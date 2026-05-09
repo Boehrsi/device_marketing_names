@@ -1,3 +1,8 @@
+## 2.0.1
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2026-05-03)
+* Update dependencies
+
 ## 2.0.0
 
 * Logic rewrite to support WASM
