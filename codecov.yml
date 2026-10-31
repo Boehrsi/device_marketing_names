@@ -11,3 +11,8 @@ coverage:
     patch:
       default:
         target: auto
+
+ignore:
+  - "lib/src/data/device_identifiers.dart"
+  - "**/*.mocks.dart"
+  - "example/**"
