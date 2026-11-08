@@ -7,8 +7,8 @@ issue_tracker: https://github.com/Boehrsi/device_marketing_names/issues
 topics: [ device, name, utils ]
 
 environment:
-  sdk: ">=2.15.0 <4.0.0"
-  flutter: ">=1.20.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
@@ -31,7 +31,7 @@ platforms:
   web:
 
 scripts:
-  build_runner: dart run build_runner build --delete-conflicting-outputs
+  build_runner: dart run build_runner build
   update_data:
     windows:
       - curl --output .\lib\src\data\device_identifiers.dart --url https://raw.githubusercontent.com/Boehrsi/device_identifiers/refs/heads/main/output/device_identifiers.dart
