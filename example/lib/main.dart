@@ -8,7 +8,7 @@ void main() {
 }
 
 class DeviceNamesExample extends StatefulWidget {
-  const DeviceNamesExample({Key? key}) : super(key: key);
+  const DeviceNamesExample({super.key});
 
   @override
   State<DeviceNamesExample> createState() => _DeviceNamesExampleState();

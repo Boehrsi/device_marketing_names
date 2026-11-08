@@ -28,7 +28,5 @@ String lookupName(DeviceType type, String? model) {
       return lookupAndroidName(model);
     case DeviceType.ios:
       return lookupIosName(model);
-    default:
-      return "";
-  }
+    }
 }

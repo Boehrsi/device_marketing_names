@@ -1,4 +1,4 @@
-library device_marketing_names;
+library;
 
 import 'package:device_marketing_names/src/logic/base/device_info.dart';
 import 'package:device_marketing_names/src/logic/lookup.dart';
