@@ -1,3 +1,8 @@
+## 2.0.6
+
+* Update database (via https://github.com/Boehrsi/device_identifiers at 2026-11-08) with new format
+* Increase Flutter and Dart min versions
+
 ## 2.0.5
 
 * Update database (via https://github.com/Boehrsi/device_identifiers at 2026-10-25)
